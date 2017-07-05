@@ -4,6 +4,7 @@
 
 $padding-right: 24px;
 $main-color:#1ab5b3;
+$main-color_rgb:rgb(26,181,179);
 
 a{
 	display:block;
@@ -14,7 +15,8 @@ html{
 }
 body{
 	height: 100%;
-	font-family: 'Roboto';
+	font-family: 'Roboto';	
+	font-weight:300;
 }
 .clearfix{
 	content: ".";
@@ -25,11 +27,12 @@ body{
 }
 
 .main-menu{
-	//overflow-y: auto;
-	display: block;
+	position: fixed;
+	top:0;
+	left: 0;
+	overflow-y: auto;
 	width: 300px;
 	height: 100%;
-	font-weight:300;
 	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
 	box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
@@ -147,4 +150,130 @@ body{
 			padding-bottom: 40px;
 		}
 	}
+}
+
+.container{
+	padding-left: 300px;
+	display:inline-block;
+	.card{
+		position:relative;
+		float: left;
+		display: block;
+		width: 405px;
+		height: 311px;
+	}
+	.card .more{
+		color:#fff;
+		position:absolute;
+		top:0;
+		left:0;
+		//visibility:hidden;
+		width:100%;
+		height: 100%;
+		text-align:center;
+		opacity:0;
+		background-color: rgba($main-color_rgb, 0.9);
+		animation-name: hide;
+		animation-timing-function: ease-in-out;
+		animation-duration: .2s;
+		h2{
+			margin-top:80px;
+		}
+		hr{
+			width:100px;
+			border: none;
+			height:1px;
+			background-color:#fff;
+			margin-top:10px;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size:8pt;
+		}
+		.btn-round{
+			margin:auto;
+		}
+	}
+	.btn-round{
+    	line-height: 56px;
+		text-align:center;
+		width:56px;
+		height: 56px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		a{
+			color:#fff;
+		}
+	}
+	.card:hover .more{
+		animation-name: show;
+		animation-timing-function: ease-in-out;
+		animation-duration: .2s;
+		//visibility:visible;
+		opacity:1;
+	}
+	.help{
+		width:90px;
+		height: 90px;
+		position: fixed;
+		right:0;
+		top:0;
+		z-index: 10;
+		background-color: $main-color;
+		.btn-round{
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			margin-top:14px;
+			margin-left: 14px;
+		}
+		.dialog{
+			font-size:13pt;
+			position:relative;
+			height:107px;
+			width: 303px;
+			background-color:rgba(51,51,51, .7);
+			display:none;
+			left:-303px;
+			top:13px;
+			padding-top:21px;
+			p{
+				margin-left:18px;
+				margin-bottom:14px;
+				color:#fff;
+				i{
+					width:20px;
+				}
+			}
+		}
+	}
+	.help:hover .dialog{
+		display: block;
+	}
+}
+@keyframes show{
+	0%{transform:scale(0);opacity:0}
+	10%{transform:scale(0.1);opacity:.1}
+	20%{transform:scale(0.2);opacity:.2}
+	30%{transform:scale(0.3);opacity:.3}
+	40%{transform:scale(0.4);opacity:.4}
+	50%{transform:scale(0.5);opacity:.5}
+	60%{transform:scale(0.6);opacity:.6}
+	70%{transform:scale(0.7);opacity:.7}
+	80%{transform:scale(0.8);opacity:.8}
+	90%{transform:scale(0.9);opacity:.9}
+	100%{transform:scale(1);opacity:1}
+}
+@keyframes hide{
+	100%{transform:scale(0);opacity:0}
+	90%{transform:scale(0.1);opacity:.1}
+	80%{transform:scale(0.2);opacity:.2}
+	70%{transform:scale(0.3);opacity:.3}
+	60%{transform:scale(0.4);opacity:.4}
+	50%{transform:scale(0.5);opacity:.5}
+	40%{transform:scale(0.6);opacity:.6}
+	30%{transform:scale(0.7);opacity:.7}
+	20%{transform:scale(0.8);opacity:.8}
+	10%{transform:scale(0.9);opacity:.9}
+	0%{transform:scale(1);opacity:1}
 }
