@@ -24,7 +24,7 @@ body{
 	visibility: hidden;
 }
 
-nav{
+.main-menu{
 	//overflow-y: auto;
 	display: block;
 	width: 300px;
@@ -56,7 +56,6 @@ nav{
 			background: linear-gradient(#2e363a, #333b3f);
 			color: #fff;
 			border-bottom:solid #293034 1px;
-			transition: ease-out 0.1s;
 		}
 		.active a,
 		.item a:hover{
