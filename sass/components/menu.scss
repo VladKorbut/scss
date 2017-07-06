@@ -1,0 +1,123 @@
+@import '../vars';
+.main-menu{
+	position: fixed;
+	top:0;
+	left: 0;
+	overflow-y: auto;
+	width: 300px;
+	height: 100%;
+	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.6);
+	background-color: #242b2e;
+	.logo{
+		padding-top: 32px;
+		background-color: #fff;
+		margin:auto;
+		height: 93px;
+		img{
+			display: block;
+			margin: auto;
+		}
+	}
+	.menu{
+		.item a{
+			font-size:13.5pt;
+			line-height:61px;
+			padding-right: $padding-right;
+			text-transform: uppercase;
+			text-align: right;
+			background: linear-gradient(#2e363a, #333b3f);
+			color: #fff;
+			border-bottom:solid #293034 1px;
+		}
+		.active a,
+		.item a:hover{
+			background: linear-gradient(#31bdbb, #18a3a1);
+			border-bottom:solid #169291 1px;
+		}
+
+	}
+	.filters_block{
+		padding-top: 24px;
+		padding-right: $padding-right;
+		padding-bottom: 23px;
+		background-color: #242b2e;
+		color:$main-color;
+		text-align: right;
+		border-bottom: solid 1px #1e282b;
+		h3{
+			font-size:18px;
+		}
+		h3 span{
+			padding-right:15px;
+		}
+		.filters{
+			padding-top: 11px;
+			.item a{
+				transition: ease-out 0.1s;
+				font-size:10pt;
+				color:#6b7072;
+				line-height:23px;
+			}
+			.active a{
+				color: #fff;
+			}
+			.item a:hover{
+				color: #ddd;
+			}
+		}
+	}
+	footer{
+		padding-right: $padding-right;
+		background-color: #242b2e;
+		.social{
+			display: inline-block;
+			float:right;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+		.social .sprite{
+			.item{
+				margin-left:9px;
+				float:left;
+				display: block;
+				height: 24px;
+				width: 24px;
+				background:url('/img/sprite.png');
+			}
+			.item a{
+				min-width: 100%;
+				min-height: 100%;
+			}
+			.flickr{
+				background-position: -225px 0;
+			}
+			.gplus{
+				background-position: -33px 0;
+			}
+			.twitter{
+				background-position: -67px 0;
+			}
+			.pinterest{
+				background-position: -100px 0;
+			}
+			.dribble{
+				background-position: -134px 0;
+			}
+			.behance{
+				background-position: -167px 0;
+			}
+			.facebook{
+				background-position: -200px 0;
+			}
+		}
+		.copyright{
+			text-align:right;
+			font-size:9pt;
+			color:#6b7072;
+			display: block;
+			padding-bottom: 40px;
+		}
+	}
+}

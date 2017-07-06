@@ -1,0 +1,19 @@
+a{
+	display:block;
+	text-decoration: none;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	font-family: 'Roboto';	
+	font-weight:300;
+}
+.clearfix{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
