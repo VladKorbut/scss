@@ -1,0 +1,53 @@
+@import "../vars";
+.contact-form{
+		width: 100%;
+		background-color: #fff;
+		.left{
+			width:calc(55% - 20px);
+			float:left;
+			margin-right: 20px;
+		}
+		.right{
+			width: 45%;
+			float:right;
+		}
+		.input{
+			width:100%;
+			border: $border;
+			line-height:56px;
+			float:left;
+			margin: 3px 0;
+			.box{
+				float:left;
+				width:60px;
+				border-right: 1px solid #eaeaea;
+   				@include rounded-icon(35px);
+   				.rounded-icon{
+   					margin: 9px 10px;
+   				}
+			}
+			input{
+				width:calc(100% - 77px);
+				display: block;
+				padding-left:15px;
+				line-height:inherit;
+				border:none;
+				height: 56px;
+			}
+		}
+		.submit{
+			margin-top: 3px;
+			width: 100%;
+			height: 60px;
+			border:none;
+			background-color: $main-color;
+			color: #fff;
+		}
+		textarea{
+			border: $border;
+			width: calc(100% - 38px);
+			margin-top: 3px;
+			height: 74px;
+			padding: 25px 18px;
+		}
+	}

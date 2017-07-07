@@ -37,9 +37,7 @@
             }
         }
         .features {
-            li {
-                color: $list-grey;
-                display: block;
+            li{
                 padding-left: 1.3em;
             }
             li::before {

@@ -11,6 +11,16 @@ body{
 	font-family: 'Roboto';	
 	font-weight:300;
 }
+h1, h2, h3, h4, h5, h6{
+	text-transform: capitalize;
+}
+.list{
+	li {
+		line-height:1.5;
+		color: $list-grey;
+		display: block;
+	}
+}
 .clearfix{
 	content: ".";
 	display: block;
