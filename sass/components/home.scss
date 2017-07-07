@@ -2,11 +2,6 @@
 
 .container{
 	@include btn-round(56px);
-	.card:hover .more{
-		transform: scale(1);
-		transition:ease-in 0.2s;
-		opacity:1;
-	}
 	.help{
 		width:90px;
 		height: 90px;

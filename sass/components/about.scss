@@ -1,0 +1,70 @@
+@import '../vars';
+.content.about{
+	.row{
+		margin:10px 0;
+		display: inline-block;
+	}
+	.row .card{
+		width: 227px;
+	}
+	.card:nth-child(2){
+		margin: 0 20px;
+	}
+	.more{
+		h3{
+			margin-top:30%;
+			font-weight: 800;
+			text-transform: uppercase;
+			color:white;
+		}
+		span{
+			color:#fff;
+			font-size: 8pt;
+			text-transform: capitalize;
+		}
+	}
+	.testimonials{
+		.item{
+			width:100%;
+			border: $border;
+			.photo{
+				float: left;
+				width:80px;
+				height:80px;
+				img{
+					display: block;
+					width:100%;
+					height: 100%;
+				}
+			}
+			.description{
+				height:80px;
+				background-color: $main-color;
+				line-height:80px;
+				span{
+					margin-left: 20px;
+					font-style: italic;
+					color:#fff;
+				}
+			}
+			.body{
+				padding: 25px 30px;
+				p{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+	.services{
+		ul{
+			li{
+				color: $list-grey;
+				line-height: 1.5;
+			}
+			li:before{
+				content: '•';
+				margin-right:10px;
+			}
+		}
+	}
+}

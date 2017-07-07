@@ -1,6 +1,6 @@
 @import 'reset';
 @import './node_modules/font-awesome/scss/font-awesome';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&subset=cyrillic,cyrillic-ext');
 
 
 @import 'components/main';
@@ -12,3 +12,4 @@
 
 @import 'components/work';
 @import 'components/contact';
+@import 'components/about';

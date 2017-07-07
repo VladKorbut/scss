@@ -2,7 +2,9 @@ $padding-right: 24px;
 $main-color: #1ab5b3;
 $main-color_rgb: rgb(26,181,179);
 $main-bg: #b4b7b8;
-
+$text: #a3a3a3;
+$border: solid 1px #eaeaea;
+$list-grey: #848484;
 @mixin rounded-icon($diam) {
 	.rounded-icon{
 		text-align: center;

@@ -6,7 +6,6 @@
         margin: 30px;
     }
     .left {
-        width: 721px;
         .slider {
             height: 560px;
         }
@@ -15,8 +14,6 @@
         }
     }
     .right {
-        width: 712px;
-        float: left;
         .info {
             line-height: 42px;
         }
@@ -30,7 +27,7 @@
         .tags a {
             line-height: 40px;
             border-radius: 15px;
-            border: 1px solid #dbdbdb;
+            border: $border;
             color: #a9a9a9;
             padding: 0 10px;
         }
@@ -41,7 +38,7 @@
         }
         .features {
             li {
-                color: #848484;
+                color: $list-grey;
                 display: block;
                 padding-left: 1.3em;
             }

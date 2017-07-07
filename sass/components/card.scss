@@ -24,7 +24,7 @@
 			transform: scale(0);
 			transition:ease-in 0.3s;
 			h2{
-				margin-top:80px;
+				margin-top:20%;
 				line-height:30px;
 			}
 			hr{
@@ -42,5 +42,10 @@
 				margin:auto;
 			}
 		}
+	}
+	.card:hover .more{
+		transform: scale(1);
+		transition:ease-in 0.2s;
+		opacity:1;
 	}
 }

@@ -42,16 +42,33 @@ body{
         background-color: #e5e5e5;
         border: none;
     }
-    p {
+    p, span {
+        color: $text;
+    }
+    p{
         padding-bottom: 13px;
         line-height: 1.5;
-        color: #a3a3a3;
         font-size: 14pt;
     }
+    span{
+    	font-size: 0.9em;
+    	line-height:1.5;
+    }
     .left{
+        width: 721px;
 		float:left;
 	}
 	.right{
 		float:right;
+        width: 712px;
+        float: left;
 	}
+}
+.progress{
+	height:20px;
+	border: $border;
+}
+.progress-bar{
+	height:100%;
+	background-color: #e2e2e2;
 }
