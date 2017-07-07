@@ -1,80 +1,57 @@
 @import '../vars';
 @import 'slider';
-.container{
-	.bg{
-		background-color: #b4b7b8;
-		display:inline-block;
-		width: 100%;
-		.content{
-			background-color: #fff;
-			margin: 25px;
-			display:inline-block;
-			h2{
-					font-size: 19pt;
-					line-height: 2.5;
-			}
-			hr{
-				height:1px;
-				width: 100%;
-				background-color:#e5e5e5;
-				border: none;
-			}
-			>div{
-				float: left;
-				margin:30px;
-			}
-			.left{
-				width: 721px;
-				.slider{
-					height: 560px;
-				}
-				p{
-					padding-bottom: 13px;
-					line-height:1.5;
-					color:#a3a3a3;
-					font-size: 14pt;
-				}
-				.related a{
-					float:left;
-				}
-			}
-			.right{
-				width: 712px;
-				.info{
-					line-height:42px;
-				}
-				.rounded-icon{
-					margin-right: 15px;
-				}
-				.tags div{
-					display:inline-block;
-				}
-				.tags a{
-					line-height: 40px;
-					border-radius:15px;
-					border: 1px solid #dbdbdb;
-					color:#a9a9a9;
-					padding: 0 10px;
-				}
-				.gallery{
-					a{
-						display:inline-block;
-					}
-				}
-				.features{
-					li{
-						color:#848484;
-						display:block;
-						padding-left: 1.3em;
-					}
-					li::before{
-						content: "\f00c";
-						font-family: 'FontAwesome';
-						margin-left: -1.3em;
-						width: 1.3em;
-					}
-				}
-			}
-		}
-	}
+.content {
+    >div {
+        float: left;
+        margin: 30px;
+    }
+    .left {
+        width: 721px;
+        .slider {
+            height: 560px;
+        }
+        .related a {
+            float: left;
+        }
+    }
+    .right {
+        width: 712px;
+        float: left;
+        .info {
+            line-height: 42px;
+        }
+        @include rounded-icon(35px);
+        .rounded-icon{
+            margin-right: 15px;
+        }
+        .tags div {
+            display: inline-block;
+        }
+        .tags a {
+            line-height: 40px;
+            border-radius: 15px;
+            border: 1px solid #dbdbdb;
+            color: #a9a9a9;
+            padding: 0 10px;
+        }
+        .gallery {
+            a {
+                display: inline-block;
+            }
+        }
+        .features {
+            li {
+                color: #848484;
+                display: block;
+                padding-left: 1.3em;
+            }
+            li::before {
+                content: "\f00c";
+                font-family: 'FontAwesome';
+                margin-left: -1.3em;
+                margin-right: 7px;
+                width: 1.3em;
+            }
+        }
+    }
 }

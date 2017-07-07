@@ -23,14 +23,35 @@ body{
 	width: calc(100% - 300px);
 	height:100%;
 }
-.rounded-icon{
-	text-align: center;
-	width:30px;
-	height:30px;
-	line-height: 30px;
-	border: 1px solid $main-color;
-	border-radius: 50%;
-	color: $main-color;
-	font-size: 10pt;
+.bg{
+	background-color: $main-bg;
 	display:inline-block;
+	width: 100%;	
+}
+.content{
+	background-color: #fff;
+	margin: 25px;
+	display:inline-block;
+	h2 {
+        font-size: 19pt;
+        line-height: 2.5;
+    }
+    hr {
+        height: 1px;
+        width: 100%;
+        background-color: #e5e5e5;
+        border: none;
+    }
+    p {
+        padding-bottom: 13px;
+        line-height: 1.5;
+        color: #a3a3a3;
+        font-size: 14pt;
+    }
+    .left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
 }

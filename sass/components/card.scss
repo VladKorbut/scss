@@ -1,0 +1,46 @@
+@import '../vars';
+.container{
+	.card{
+		position:relative;
+		float: left;
+		display: block;
+		width: 25%;
+		img{
+			display:block;
+			width:100%;
+			height:100%;
+		}
+		.more{
+			color:#fff;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 100%;
+			max-height: 100%;
+			text-align:center;
+			opacity:0;
+			background-color: rgba($main-color_rgb, 0.9);
+			transform: scale(0);
+			transition:ease-in 0.3s;
+			h2{
+				margin-top:80px;
+				line-height:30px;
+			}
+			hr{
+				width:100px;
+				border: none;
+				height:1px;
+				background-color:#fff;
+				margin-top:10px;
+				margin-bottom: 10px;
+			}
+			p{
+				font-size:8pt;
+			}
+			.btn-round{
+				margin:auto;
+			}
+		}
+	}
+}

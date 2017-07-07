@@ -1,0 +1,66 @@
+@import '../vars';
+$border: solid 1px #eaeaea;
+#map{
+    position: absolute;
+ 	height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(100%);
+	z-index: -1;
+}
+.contact{
+	width: 782px;
+	background-color: #fff;
+	form{
+		.left{
+			width:361px;
+			float:left;
+		}
+		.right{
+			width: 412px;
+			float:right;
+		}
+		.input{
+			width: 361px;
+			border: $border;
+			line-height:56px;
+			float:left;
+			margin: 3px 0;
+			.box{
+				float:left;
+				width:60px;
+				border-right: 1px solid #eaeaea;
+   				@include rounded-icon(35px);
+   				.rounded-icon{
+   					margin: 9px 10px;
+   				}
+			}
+			input{
+				padding-left:15px;
+				float:right;
+				line-height:inherit;
+				width: 285px;
+				border:none;
+				height: 56px;
+			}
+		}
+		.submit{
+
+			margin-top: 3px;
+			width: 100%;
+			height: 60px;
+			border:none;
+			background-color: $main-color;
+			color: #fff;
+		}
+		textarea{
+			border: $border;
+			width: calc(100% - 38px);
+			margin-top: 3px;
+			height: 74px;
+			padding: 25px 18px;
+		}
+	}
+}
