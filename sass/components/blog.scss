@@ -1,43 +1,63 @@
 @import '../vars';
 @import 'slider';
-.content{
-	.comment{
-		position:relative;
-		margin: 16px 0;
-		img{
-			width: 80px;
-			height: 80px;
-			display: block;
-			float:left;
-			margin-right: 20px;
-		}
-		h4{
-			font-weight: 500;
-			border-bottom:$border;
-			display:inline-block;
-		}
-		.time{
-			color:$list-grey;
-		}
-		.time:before{
-			content:'/';
-			margin:0 5px;
+.content.blog{
+    -moz-column-width: 294px;
+    -webkit-column-width: 294px;
+	column-width: 294px;
+    column-gap: 25px;
+	height: 100%;
+	margin: 0;
+	background: none;
+	padding:  25px 0 25px 25px;
+	.card{
+		display: inline-block;
+		margin:0;
+		margin: 0 2px 15px;
+		width:  calc(100% - 50px); 
+		background:  #fff;
+		-webkit-column-break-inside: avoid;
+				  page-break-inside: avoid;
+					   break-inside: avoid;
+		.slider{
+			height:250px;
 		}
 		.body{
-			line-height:2;
+			padding:25px;
+			padding-bottom: 0;
+			h3{
+				font-weight: 500;
+			}
+			p{
+				font-size: 1em;
+			}
+		}
+		.bottom{
+			padding:25px;
+			border-top: $border;
+			div{
+				font-size:0.9em;
+				color:$text;
+				display:inline-block;
+				margin-right: 5px;
+				i{
+					margin-right: 5px;
+				}
+				a{
+					color:$text;
+				}
+			}
 		}
 	}
-	.comment>.comment{
-		margin-left:100px;
-	}
-	.comment>.comment:before{
-		content: '';
-		position: absolute;
-		width:40px;
-		height:40px;
-		border-left: $border;
-		border-bottom: $border;
-		left: -60px;
-		top: 0;
+	.card.link{
+		background-color: $main-color;
+		text-align: center;
+		p{
+			color:#fff;
+		}
+		a{
+			font-style: italic;
+			font-weight: 600;
+			text-decoration: underline;
+		}
 	}
 }
