@@ -36,7 +36,9 @@ h1, h2, h3, h4, h5, h6{
 .bg{
 	background-color: $main-bg;
 	display:inline-block;
-	width: 100%;	
+	width: 100%;
+	min-height: 100%;
+	position: relative;
 }
 .content{
 	background-color: #fff;

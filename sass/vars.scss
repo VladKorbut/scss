@@ -5,6 +5,7 @@ $main-bg: #b4b7b8;
 $text: #a3a3a3;
 $border: solid 1px #eaeaea;
 $list-grey: #848484;
+$dark-grey: #242b2e;
 @mixin rounded-icon($diam) {
 	.rounded-icon{
 		text-align: center;
@@ -20,8 +21,9 @@ $list-grey: #848484;
 }
 @mixin btn-round($diam){
 	.btn-round{
+		box-sizing: border-box;
     	line-height: $diam;
-		text-align:center;
+    	text-align:center;
 		width: $diam;
 		height: $diam;
 		border-radius: 50%;
@@ -31,8 +33,6 @@ $list-grey: #848484;
 		}
 	}
 	* .btn-round{
-		position: absolute;
-		top: 0;
-		left: 0;
+		margin:auto;
 	}
 }

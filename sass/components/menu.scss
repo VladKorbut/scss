@@ -9,7 +9,7 @@
 	-webkit-box-shadow: 0px 0px 51px 0px rgb(0,0,0);
 	-moz-box-shadow: 0px 0px 51px 0px rgb(0,0,0);
 	box-shadow: 0px 0px 51px 0px rgb(0,0,0);
-	background-color: #242b2e;
+	background-color: $dark-grey;
 	z-index:1;
 	.logo{
 		padding-top: 32px;
@@ -43,7 +43,7 @@
 		padding-top: 24px;
 		padding-right: $padding-right;
 		padding-bottom: 23px;
-		background-color: #242b2e;
+		background-color: $dark-grey;
 		color:$main-color;
 		text-align: right;
 		border-bottom: solid 1px #1e282b;
@@ -71,7 +71,7 @@
 	}
 	footer{
 		padding-right: $padding-right;
-		background-color: #242b2e;
+		background-color: $dark-grey;
 		.social{
 			display: inline-block;
 			float:right;
