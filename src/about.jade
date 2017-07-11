@@ -1,0 +1,84 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5
+		link(rel='stylesheet', href='css/styles.css')
+		//if lt IE 9
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+	body
+		include menu
+		+menu('about')
+		.container
+			.bg
+				.content.about
+					.left
+						.image
+							img(src='img/about.png', alt='')
+						.description
+							h2 Who We Are
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada quis nisi auctor molestie. Sed efficitur augue in ex venenatis auctor. Pellentesque finibus tincidunt pellentesque. Nunc sollicitudin dignissim ante vitae tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							p
+								| Fusce sapien nulla, lacinia quis lectus ac, pharetra fermentum magna. Donec eleifend risus sed augue tristique, id molestie justo scelerisque. Duis non rhoncus ante, ut pharetra massa. Quisque eleifend lobortis augue sit amet mollis. Nunc interdum ullamcorper sapien vitae molestie. Sed ut ornare lorem. Donec ac viverra turpis, vitae viverra massa. Pellentesque vitae faucibus nunc, in viverra sapien.
+						hr
+						.stuff
+							.row
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+							.row
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+								.card
+									img(src='img/stuff.png', alt='')
+									.more
+										h3 Jonh Smith
+										span frontend developer
+					.right
+						.skills
+							h2 Our Skills
+							span Website Design
+							.progress
+								.progress-bar(style='width:80%')
+							span Website Design
+							.progress
+								.progress-bar(style='width:90%')
+						.testimonials
+							h2 Testimonials
+							.item
+								.header
+									.photo
+										img(src='img/testimonial.png', alt='')
+									.description
+										span Collis Ta’eed - CEO at Envato
+								.body
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada quis nisi auctor molestie. Sed efficitur augue in ex venenatis auctor. Pellentesque finibus tincidunt pellentesque.
+						.services
+							h2 Services
+							ul.list
+								li Web design
+								li Photography
+								li Plugin Development
+								li Front-end

@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5
+		link(rel='stylesheet', href='css/styles.css')
+		//if lt IE 9
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+	body
+		include menu
+		+menu('contact')
+		.container
+			#map
+			.content
+				.contact
+					h2 Get in touch with us
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac ullamcorper enim, sed vestibulum tellus. Sed purus ligula, pharetra vel lobortis ut, vehicula eget felis. Curabitur malesuada id lorem ut placerat. Etiam mattis accumsan tortor ut ullamcorper. Pellentesque luctus accumsan metus, quis sollicitudin tellus elementum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vulputate feugiat finibus. Aenean lobortis elit turpis, ac cursus ex placerat a.
+					hr
+					h2 Send us a message
+					form.contact-form(action='')
+						.left
+							.input
+								.box
+									.rounded-icon
+										i.fa.fa-user(aria-hidden='true')
+								input(required='', placeholder='Name', type='text')
+							.input
+								.box
+									.rounded-icon
+										i.fa.fa-envelope-o(aria-hidden='true')
+								input(required='', placeholder='e-mail', type='email')
+							.input
+								.box
+									.rounded-icon
+										i.fa.fa-link(aria-hidden='true')
+								input(required='', placeholder='website', type='text')
+						.right
+							textarea(required='', placeholder='Message', name='')
+							input.submit(type='submit', value='Send Now!')
+	script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+	script(type='text/javascript').
+		ymaps.ready(init);
+		var myMap;
+		function init(){
+		myMap = new ymaps.Map("map", {
+		center: [55.76, 37.64],
+		zoom: 14
+		});
+		}

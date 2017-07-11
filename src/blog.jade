@@ -1,0 +1,118 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5
+		link(rel='stylesheet', href='css/styles.css')
+		//if lt IE 9
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+	body
+		include menu
+		+menu('blog')
+		.container
+			.help
+				.btn-round
+					a(href='')
+						i.fa.fa-info-circle(aria-hidden='true')
+				.dialog
+					p
+						i.fa.fa-phone(aria-hidden='true')
+						| 9930 1234 5679
+					p
+						i.fa.fa-envelope(aria-hidden='true')
+						| contact@domain.com
+					p
+						i.fa.fa-home(aria-hidden='true')
+						| street address example
+			.bg
+				.content.blog
+					.card
+						.slider
+							input#img-1(type='radio', name='radio-btn', checked='')
+							li.slide-container
+								.slide
+									img(src='img/slider.png')
+								.nav
+									label.prev(for='img-2') 
+									label.next(for='img-1') 
+							input#img-2(type='radio', name='radio-btn')
+							li.slide-container
+								.slide
+									img(src='img/slider.png')
+								.nav
+									label.prev(for='img-1') 
+									label.next(for='img-2') 
+						.body
+							h3 Gallery Post Example
+							p A man who works with his hands is a laborer; a man who works wi
+						.bottom
+							.comments
+								a(href='')
+									i.fa.fa-comment(aria-hidden='true')
+									| 3 Comments
+							.date
+								i.fa.fa-calendar(aria-hidden='true')
+								| Dec 19, 2013
+					.card.arrow
+						img(src='img/blog.png', alt='')
+						.btn-round
+							a(href='/blogpost.html')
+								i.fa.fa-arrow-right(aria-hidden='true')
+					.card.link
+						p
+							| Another Post where you can  put a link to a specific website
+							a(href='http://www.themeforest.net') http://www.themeforest.net
+					.card.link
+						p
+							| Another Post where you can  put a link to a specific website
+							a(href='http://www.themeforest.net') http://www.themeforest.net
+					.card
+						img(src='img/blog.png', alt='')
+						img(src='img/controls.png', alt='')
+						.body
+							h3 Gallery Post Example
+							p A man who works with his hands is a laborer; a man who works wi
+						.bottom
+							.comments
+								a(href='')
+									i.fa.fa-comment(aria-hidden='true')
+									| 3 Comments
+							.date
+								i.fa.fa-calendar(aria-hidden='true')
+								| Dec 19, 2013
+					.card
+						img(src='img/blog.png', alt='')
+					.card
+						img(src='img/blog.png', alt='')
+						.body
+							h3 Gallery Post Example
+							p A man who works with his hands is a laborer; a man who works wi
+						.bottom
+							.comments
+								a(href='')
+									i.fa.fa-comment(aria-hidden='true')
+									| 3 Comments
+							.date
+								i.fa.fa-calendar(aria-hidden='true')
+								| Dec 19, 2013
+					.card.aside
+						h2 Aside Post Format
+						p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+					.card.quote
+						p Logic will get you from A to B. Imagination will take you everywhere
+						h3 Albert Einstein
+					.card
+						img(src='img/blog.png', alt='')
+						.body
+							h3 Gallery Post Example
+							p A man who works with his hands is a laborer; a man who works wi
+						.bottom
+							.comments
+								a(href='')
+									i.fa.fa-comment(aria-hidden='true')
+									| 3 Comments
+							.date
+								i.fa.fa-calendar(aria-hidden='true')
+								| Dec 19, 2013
+					.older
+						a(href='') Older posts

@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5
+		link(rel='stylesheet', href='css/styles.css')
+		//if lt IE 9
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+	body
+		include menu
+		+menu('blog')
+		.container
+			.bg
+				.content
+					.left
+						.slider
+							input#img-1(type='radio', name='radio-btn', checked='')
+							li.slide-container
+								.slide
+									img(src='img/slider.png')
+							input#img-2(type='radio', name='radio-btn')
+							li.slide-container
+								.slide
+									img(src='img/slider.png')
+							input#img-3(type='radio', name='radio-btn')
+							li.slide-container
+								.slide
+									img(src='img/slider.png')
+							li.nav-dots
+								label#img-dot-1.nav-dot(for='img-1')
+								label#img-dot-2.nav-dot(for='img-2')
+								label#img-dot-3.nav-dot(for='img-3')
+						.description
+							h2 Heavy Sand - Creative Photography
+							p
+								| Curabitur ullamcorper metus ut orci sollicitudin molestie. Cras malesuada libero sed consectetur cursus. Nulla luctus et ligula at luctus. Cras vitae lobortis elit, vel condimentum metus. Phasellus bibendum leo sollicitudin massa ultricies, vel condimentum arcu porttitor. Morbi consequat enim at neque pulvinar fringilla. Duis vel est vitae arcu mollis egestas. Vestibulum sit amet dui sollicitudin, pulvinar nisl nec, posuere nunc. Sed egestas orci id varius mollis. Nam ut consequat dui. Maecenas nec leo metus.
+							p
+								| Mauris venenatis maximus mi sed euismod. Quisque interdum mi eget lectus iaculis, id aliquet dui ultricies. Nulla gravida augue sit amet tincidunt condimentum. Pellentesque rhoncus felis sit amet tellus pulvinar, vel gravida velit elementum. Phasellus gravida ante quis enim lacinia faucibus. In in nunc erat. Ut eros dui, pretium in ante malesuada, fermentum dictum lectus. Etiam fringilla hendrerit ultrices. Cras eget nulla ligula. Nulla ac massa vitae sapien ullamcorper sagittis egestas ut libero.
+						hr
+						h2 5 Comments
+						.comment
+							img(src='img/comment.png', alt='')
+							h4
+								| ShaneFreer
+								span.time 58 minutes ago
+							p.body great post brainartworks
+							.comment
+								.clearfix
+								img(src='img/comment.png', alt='')
+								h4
+									| ShaneFreer
+									span.time 58 minutes ago
+								p.body great post brainartworks
+						.comment
+							img(src='img/comment.png', alt='')
+							h4
+								| ShaneFreer
+								span.time 58 minutes ago
+							p.body great post brainartworks
+							.comment
+								.clearfix
+								img(src='img/comment.png', alt='')
+								h4
+									| ShaneFreer
+									span.time 58 minutes ago
+								p.body great post brainartworks
+						.clearfix
+						form.contact-form(action='')
+							.left
+								.input
+									.box
+										.rounded-icon
+											i.fa.fa-user(aria-hidden='true')
+									input(required='', placeholder='Name', type='text')
+								.input
+									.box
+										.rounded-icon
+											i.fa.fa-envelope-o(aria-hidden='true')
+									input(required='', placeholder='e-mail', type='email')
+								.input
+									.box
+										.rounded-icon
+											i.fa.fa-link(aria-hidden='true')
+									input(required='', placeholder='website', type='text')
+							.right
+								textarea(required='', placeholder='Message', name='')
+								input.submit(type='submit', value='Send Now!')
+					.right
+						.info
+							h2 Post Info
+							p
+								.rounded-icon
+									i.fa.fa-user(aria-hidden='true')
+								| 							premiumlayers
+							hr
+							p
+								.rounded-icon
+									i.fa.fa-heart(aria-hidden='true')
+								| 							138 Likes
+							hr
+							p
+								.rounded-icon
+									i.fa.fa-calendar(aria-hidden='true')
+								| 							25 December, 2013
+							hr
+							p
+								.rounded-icon
+									i.fa.fa-link(aria-hidden='true')
+								| 							4 Comments
+							hr
+						.tags
+							h2 Tags
+							div
+								a(href='') web design
+							div
+								a(href='') photography
+							div
+								a(href='') development
+						.archives
+							h2 Archives
+							ul.list
+								li December 2013(24)
+								li December 2013(24)
+								li December 2013(24)

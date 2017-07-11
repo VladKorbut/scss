@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5
+		link(rel='stylesheet', href='css/styles.css')
+		//
+			if lt IE 9script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+	body
+		include menu
+		+menu('home')
+		.container
+			.help
+				.btn-round
+					a(href='')
+						i.fa.fa-info-circle(aria-hidden='true')
+				.dialog
+					p
+						i.fa.fa-phone(aria-hidden='true')
+						| 9930 1234 5679
+					p
+						i.fa.fa-envelope(aria-hidden='true')
+						| contact@domain.com
+					p
+						i.fa.fa-home(aria-hidden='true')
+						| street address example
+			.card
+				img(src='img/card.png', alt='')
+				.more
+					h2 Cool App Design
+					p development, mobile
+					hr
+					.btn-round
+						a(href='/work.html')
+							i.fa.fa-arrow-right(aria-hidden='true')
+			.card
+				img(src='img/card_l.png', alt='')
+			.card
+				img(src='img/card.png', alt='')
+			.card
+				img(src='img/card_l.png', alt='')
+			.card
+				img(src='img/card_l.png', alt='')
+			.card
+				img(src='img/card.png', alt='')
+			.card
+				img(src='img/card_l.png', alt='')
+			.card
+				img(src='img/card.png', alt='')

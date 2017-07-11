@@ -1,0 +1,55 @@
+mixin menu(page)
+	.main-menu
+		.logo
+			img(src='img/logo.png', alt='')
+		nav
+			ul.menu
+				li.item(class = (page == 'home' ? 'active' : ''))
+					a(href='/') home
+				li.item(class = (page == 'work' ? 'active' : ''))
+					a(href='/work.html') work
+				li.item(class = (page == 'about' ? 'active' : ''))
+					a(href='/about.html') about
+				li.item(class = (page == 'blog' ? 'active' : ''))
+					a(href='/blog.html') blog
+				li.item(class = (page == 'services' ? 'active' : ''))
+					a(href='') services
+				li.item(class = (page == 'contact' ? 'active' : ''))
+					a(href='/contact.html') contact
+		.filters_block
+			h3
+				span Filter
+				i.fa.fa-th-large(aria-hidden='true')
+			ul.filters
+				li.item.active
+					a(href='') All Works
+				li.item
+					a(href='') web design
+				li.item
+					a(href='') illustartion
+				li.item
+					a(href='') photography
+				li.item
+					a(href='') wallpapers
+				li.item
+					a(href='') brochures
+		footer
+			.social
+				ul.sprite
+					li.item.flickr
+						a(href='')
+					li.item.gplus
+						a(href='')
+					li.item.twitter
+						a(href='')
+					li.item.pinterest
+						a(href='')
+					li.item.dribble
+						a(href='')
+					li.item.behance
+						a(href='')
+					li.item.facebook
+						a(href='')
+			.clearfix
+			.copyright
+				p © 2014 Kappe, All Rights Reserved
