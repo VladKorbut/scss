@@ -6,9 +6,10 @@
 	}
 	.row .card{
 		width: 227px;
+		margin-top: 20px;
 	}
-	.card:nth-child(2){
-		margin: 0 20px;
+	.card:nth-child(3n-1){
+		margin: 20px 20px 0;
 	}
 	.more{
 		h3{

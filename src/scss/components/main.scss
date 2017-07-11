@@ -67,13 +67,18 @@ h1, h2, h3, h4, h5, h6{
     	line-height:1.5;
     }
     .left{
-        width: 721px;
 		float:left;
 	}
 	.right{
-		float:right;
-        width: 712px;
         float: left;
+	}
+}
+.double{
+	.left{
+        width: 721px;
+	}
+	.right{
+        width: 712px;
 	}
 }
 .progress{

@@ -24,26 +24,17 @@ html(lang='en')
 					p
 						i.fa.fa-home(aria-hidden='true')
 						| street address example
-			.card
-				img(src='img/card.png', alt='')
-				.more
-					h2 Cool App Design
-					p development, mobile
-					hr
-					.btn-round
-						a(href='/work.html')
-							i.fa.fa-arrow-right(aria-hidden='true')
-			.card
-				img(src='img/card_l.png', alt='')
-			.card
-				img(src='img/card.png', alt='')
-			.card
-				img(src='img/card_l.png', alt='')
-			.card
-				img(src='img/card_l.png', alt='')
-			.card
-				img(src='img/card.png', alt='')
-			.card
-				img(src='img/card_l.png', alt='')
-			.card
-				img(src='img/card.png', alt='')
+			- var nums = new Array(8);
+			for n in [0,1,2,3,5,6,7,8]
+				.card
+					if (n % 2) == 0
+						img(src='img/card.png', alt='')
+					else
+						img(src='img/card_l.png', alt='')
+					.more
+						h2 Cool App Design
+						p development, mobile
+						hr
+						.btn-round
+							a(href='/work.html')
+								i.fa.fa-arrow-right(aria-hidden='true')
