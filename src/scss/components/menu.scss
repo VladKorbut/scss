@@ -23,6 +23,7 @@
 	}
 	.menu{
 		.item a{
+			position: relative;
 			font-size:13.5pt;
 			line-height:61px;
 			padding-right: $padding-right;
@@ -31,11 +32,27 @@
 			background: linear-gradient(#2e363a, #333b3f);
 			color: #fff;
 			border-bottom:solid #293034 1px;
+			z-index: 0;
 		}
-		.active a,
-		.item a:hover{
+		.active a{
 			background: linear-gradient(#31bdbb, #18a3a1);
 			border-bottom:solid #169291 1px;
+		}
+		.item a:after{
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 0;
+			content: '';
+			height: 100%;
+			z-index: -1;
+			opacity: 0;
+			background: linear-gradient(#31bdbb, #18a3a1);
+			transition: ease-in-out 0.2s;
+		}
+		.item:hover a:after{
+			width: 100%;
+			opacity: 0.7;
 		}
 
 	}
