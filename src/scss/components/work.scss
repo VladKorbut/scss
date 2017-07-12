@@ -33,7 +33,12 @@
         }
         .gallery {
             a {
-                display: inline-block;
+                display: block;
+                float: left;
+                margin: 5px;
+                img{
+                    display: block;
+                }
             }
         }
         .features {

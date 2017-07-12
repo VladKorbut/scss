@@ -74,10 +74,10 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 .double{
-	.left{
+	>.left{
         width: 721px;
 	}
-	.right{
+	>.right{
         width: 712px;
 	}
 }
