@@ -41,7 +41,7 @@
 		.item a:after{
 			position: absolute;
 			top:0;
-			left: 0;
+			right: 0;
 			width: 0;
 			content: '';
 			height: 100%;
@@ -49,8 +49,10 @@
 			opacity: 0;
 			background: linear-gradient(#31bdbb, #18a3a1);
 			transition: ease-in-out 0.2s;
+			transform: scale(0);
 		}
 		.item:hover a:after{
+			transform: scale(1);
 			width: 100%;
 			opacity: 0.7;
 		}
@@ -103,6 +105,10 @@
 				height: 24px;
 				width: 24px;
 				background:url('/img/sprite.png');
+				transition:ease-in 0.1s;
+			}
+			.item:hover{
+				transform: scale(1.1);
 			}
 			.item a{
 				min-width: 100%;
