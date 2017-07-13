@@ -10,7 +10,11 @@
             height: 560px;
         }
         .related a {
+            width: 33%;
             float: left;
+            img{
+                width: 100%;
+            }
         }
     }
     .right {
